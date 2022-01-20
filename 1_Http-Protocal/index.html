@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Http Protocol</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-size: 18px;
+        padding: 16px;
+      }
+      h3,
+      p {
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3># HTTP Protocol</h3>
+    <p>
+      Cách thức website được truyền tải thông qua internet <br>
+      Website được lưu trữ ở một cái máy chủ ở data center, một tòa nhà nào đó <br>
+      (Địa chỉ máy chủ: Tablet network->Headers->General->Remote Address) <br />
+      Dựa vào url thì máy chủ sẽ biết được cần trả về cái gì (ctrl + U) <br />
+      Source code được trả về và trình duyệt sẽ đọc các mã nguồn đó để render và
+      hiển thị
+    </p>
+
+    <h3># Request Method</h3>
+    <p>
+      <strong>GET</strong>
+      Được sử dụng để lấy lại thông tin từ Server đã cung cấp bởi sử dụng một
+      URI đã cung cấp. <br />
+      Các yêu cầu sử dụng GET chỉ nhận dữ liệu và không có ảnh hưởng gì tới dữ
+      liệu.
+    </p>
+
+    <p>
+      <strong>HEAD</strong>
+      Tương tự như GET, nhưng nó truyền tải dòng trạng thái và khu vực Header.
+    </p>
+    <p>
+      <strong>POST</strong>
+      Một yêu cầu POST được sử dụng để gửi dữ liệu tới Server <br />
+      Ví dụ, thông tin khách hàng, file tải lên,...
+    </p>
+    <p>
+      <strong>PUT</strong>
+      Thay đổi tất cả các đại diện hiện tại của nguồn mục tiêu với nội dung được
+      tải lên.
+    </p>
+    <p>
+      <strong>DELETE</strong>
+      Gỡ bỏ tất cả các đại diện hiện tại của nguồn mục tiêu bởi URI.
+    </p>
+    <p>
+      <strong>CONNECT</strong>
+      Thiết lập một tunnel tới Server được xác định bởi URI đã cung cấp.
+    </p>
+    <p>
+      <strong>OPTIONS</strong>
+      Miêu tả các chức năng giao tiếp cho nguồn mục tiêu.
+    </p>
+    <p>
+      <strong>TRACE</strong>
+      Trình bày một vòng lặp kiểm tra thông báo song song với path tới nguồn mục
+      tiêu.
+    </p>
+
+    <h3># HTTP Status Code</h3>
+    <p>
+      <strong>1xx: </strong> Thông tin<br />
+      <strong>2xx: </strong> Thành Công<br />
+      <strong>3xx: </strong> Sự điều hướng lại<br />
+      <strong>4xx: </strong> Lỗi Client<br />
+      <strong>5xx: </strong> Lỗi Server<br />
+    </p>
+  </body>
+</html>
